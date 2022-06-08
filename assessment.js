@@ -20,28 +20,28 @@ assessmentButton.onclick = () => {
 
     resultDivided.innerText = '';
 
-    //headerDivided
-    const headerDivided = document.createElement('div');
-    headerDivided.setAttribute('class', 'card-header');
-    headerDivided.innerText = '診断結果';
+  // headerDivided の作成
+  const headerDivided = document.createElement('div');
+  headerDivided.setAttribute('class', 'card-header');
+  headerDivided.innerText = '診断結果';
 
-    //bodyDivided
-    const bodyDivided = document.createElement('div');
-    bodyDivided.setAttribute('class', 'card-body');
+  // bodyDivided の作成
+  const bodyDivided = document.createElement('div');
+  bodyDivided.setAttribute('class', 'card-body');
 
-    const paragraph = document.createElement('p');
-    paragraph.setAttribute('class', 'card-text');
-    const result = assessment(userName);
-    paragraph.innerText = result;
-    bodyDivided.appendChild(paragraph);
+  const paragraph = document.createElement('p');
+  paragraph.setAttribute('class', 'card-text');
+  const result = assessment(userName);
+  paragraph.innerText = result;
+  bodyDivided.appendChild(paragraph);
 
-    //resultDividedにbootstrap適用
-    resultDivided.setAttribute('class', 'card');
-    resultDivided.setAttribute('style', 'max-width: 700px;');
+  // resultDivided に Bootstrap のスタイルを適用する
+  resultDivided.setAttribute('class', 'card');
+  resultDivided.setAttribute('style', 'max-width: 700px;')
 
-    //deaderDividedとbodyDiv(ryをresult(ryに差し込む
-    resultDivided.appendChild(headerDivided);
-    resultDivided.appendChild(bodyDivided);
+  // headerDivided と bodyDivided を resultDivided に差し込む
+  resultDivided.appendChild(headerDivided);
+  resultDivided.appendChild(bodyDivided);
 
     tweetDivided.innerText = '';
 
