@@ -41,7 +41,7 @@ assessmentButton.onclick = () => {
 
     //deaderDividedとbodyDiv(ryをresult(ryに差し込む
     resultDivided.appendChild(headerDivided);
-    resultDivided.appendChild(bodyDivided)
+    resultDivided.appendChild(bodyDivided);
 
     tweetDivided.innerText = '';
 
