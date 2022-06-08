@@ -32,7 +32,7 @@ assessmentButton.onclick = () => {
     const paragraph = document.createElement('p');
     paragraph.setAttribute('class', 'card-text');
     const result = assessment(userName);
-    paragraph.innnerText = result;
+    paragraph.innerText = result;
     bodyDivided.appendChild(paragraph);
 
     //resultDividedにbootstrap適用
